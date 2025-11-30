@@ -6,7 +6,7 @@ import org.hibernate.Session;
 import org.hibernate.query.Query;
 
 public class RentalRepository extends BaseRepository<Rental>{
-    protected RentalRepository() {
+    public RentalRepository() {
         super(Rental.class);
     }
 

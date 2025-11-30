@@ -5,7 +5,7 @@ import jakarta.persistence.NoResultException;
 import org.hibernate.Session;
 
 public class InventoryRepository extends BaseRepository<Inventory>{
-    protected InventoryRepository() {
+    public InventoryRepository() {
         super(Inventory.class);
     }
 

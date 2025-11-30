@@ -1,5 +1,7 @@
 package com.javarush;
 
+import com.javarush.service.Service;
+
 /**
  * Hello world!
  *
@@ -8,6 +10,6 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        Service service = new Service();
     }
 }

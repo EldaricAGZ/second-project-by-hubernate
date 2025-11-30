@@ -89,19 +89,4 @@ public class Film {
         this.specialFeatures = specialFeatures;
         this.actors = actors;
     }
-
-    public Film(LocalDateTime lastUpdate, String title, BigDecimal rentalRate, String description, Short releaseYear, Language language, Short rentalDuration, Integer length, Rating rating, BigDecimal replacementCost, Set<String> specialFeatures, Set<Actor> actors) {
-        this.lastUpdate = lastUpdate == null? LocalDateTime.now() : lastUpdate;
-        this.title = title;
-        this.rentalRate = rentalRate == null? BigDecimal.valueOf(4.99) : rentalRate;
-        this.description = description;
-        this.releaseYear = releaseYear;
-        this.language = language;
-        this.rentalDuration = rentalDuration == null? Short.valueOf("3") : rentalDuration;
-        this.length = length;
-        this.rating = rating == null? Rating.G : rating;
-        this.replacementCost = replacementCost == null? BigDecimal.valueOf(19.99) : replacementCost;
-        this.specialFeatures = specialFeatures;
-        this.actors = actors;
-    }
 }
